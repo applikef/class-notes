@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./resources/styles/home.css">
-    <script src="./resources/teacherContent/settings.js"></script>
+    <script src="./teacherContent/settings.js"></script>
     <script src="./js/global.js"></script>
   </head>
   <body>
@@ -16,8 +16,8 @@
           <ul>
             <script>
               settings.targetPages.forEach(pageId => {
-                writeString("<li class='app-option-entry'><a href=./" + 
-                  pageId + ".html>" +
+                writeString("<li class='app-option-entry'><a href=./templates/" + 
+                  settings[pageId].template + ".html?pageId=" + pageId + ">" +
                   settings[pageId].title + "</a></li>")            
             });
             </script>

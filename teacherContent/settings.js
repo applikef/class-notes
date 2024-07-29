@@ -6,12 +6,13 @@
 const settings = {
   "title": "קורס קוסמים",
   "subtitle": "שנת 2024-2025",
-  "image": "resources/magic2024/pencil.png",
+  "image": "../teacherContent/magic2024/pencil.png",
   "targetPages": [
-    "syllabus",
-    "plan"
+      "magicSyllabus",
+      "magicPlan"
   ],
-  "plan": {
+  "magicPlan": {
+    "template": "plan",
     "title": "מהלך הקורס",
     "entries": [
       {
@@ -28,7 +29,8 @@ const settings = {
       }
     ]
   },
-  "syllabus": {
+  "magicSyllabus": {
+    "template": "syllabus",
     "title": "תוכן הקורס",
     "contentTitle": "חומר רקע",
     "contentUrl": "https://docs.google.com/document/d/1BR19ShVzKZ3YhIx-L-UlenuupLYqJpXy/edit?usp=sharing&ouid=108454013441329303622&rtpof=true&sd=true"

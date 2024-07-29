@@ -1,22 +1,16 @@
 <html dir="rtl">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./resources/styles/plan.css">
-    <script src="./resources/teacherContent/settings.js"></script>
-    <script src="./js/global.js"></script>
-    <script>var pageId = "plan";</script>
+    <link rel="stylesheet" href="./../resources/styles/plan.css">
+    <script src="./../teacherContent/settings.js"></script>
+    <script src="./../js/global.js"></script>
+    <script>var pageId = getPageId();</script>
   </head>
   <body>
 
-<div class="cc-page">
-  <div>
-    <a href="javascript:history.back()">
-      <img src="./resources/icons/home128.png" 
-        class="menu-icon" alt="home" />
-    </a>    
-    <hr/>
-  </div>
-  
+  <div class="cc-page">
+    <script>showBanner()</script>
+    
     <h1>
       <script>writeString(settings[pageId].title)</script>
     </h1>
