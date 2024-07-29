@@ -1,0 +1,43 @@
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./resources/styles/syllabus.css">
+    <script src="./resources/teacherContent/settings.js"></script>
+    <script src="./js/global.js"></script>
+    <script>var pageId = "syllabus";</script>
+  </head>
+  <body>
+    <div class="cc-page">
+      <div>
+        <a href="javascript:history.back()">
+          <img src="./resources/icons/home128.png" 
+            class="menu-icon" alt="home" />
+        </a>    
+        <hr/>
+      </div>
+      
+      <div class="editor-comment">
+        תוכן עמוד זה מגיע מקישור למסמך על הכונן
+      </div>
+      <div>
+        <script>
+          var entry = settings[pageId];
+          var contentTitle = entry.contentTitle;
+          if (entry.contentUrl != undefined && entry.contentUrl.length > 0) {
+            if (entry.contentTitle === undefined || entry.contentTitle.length == 0) {
+              contentTitle = "פירוט";
+            }
+            writeString("<a target='_default' href='" +
+              entry.contentUrl + "'>" + contentTitle + "</a>");
+          }
+        </script>
+      </div>
+      <br/><br/>
+      <div class="editor-comment">
+        ו/או מקובץ HTML שייכתב ע"י המורה
+      </div>
+      <iframe title="syllabus content" class="cc-syllabus-content"
+        src="./resources/teacherContent/course-syllabus.html"/>
+    </div>
+  </body>
+</html>

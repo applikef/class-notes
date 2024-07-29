@@ -1,0 +1,29 @@
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./resources/styles/home.css">
+    <script src="./resources/teacherContent/settings.js"></script>
+    <script src="./js/global.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <div class="app-header">
+        <img src="./resources/images/pencil.png" 
+          class="app-logo" alt=""/>
+        <h1><script>writeString(settings.title)</script></h1>
+        <h2><script>writeString(settings.subtitle)</script></h2>
+        <div>
+          <ul>
+            <script>
+              settings.targetPages.forEach(pageId => {
+                writeString("<li class='app-option-entry'><a href=./" + 
+                  pageId + ".html>" +
+                  settings[pageId].title + "</a></li>")            
+            });
+            </script>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

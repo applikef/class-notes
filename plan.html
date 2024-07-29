@@ -1,0 +1,38 @@
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./resources/styles/plan.css">
+    <script src="./resources/teacherContent/settings.js"></script>
+    <script src="./js/global.js"></script>
+    <script>var pageId = "plan";</script>
+  </head>
+  <body>
+
+<div class="cc-page">
+  <div>
+    <a href="javascript:history.back()">
+      <img src="./resources/icons/home128.png" 
+        class="menu-icon" alt="home" />
+    </a>    
+    <hr/>
+  </div>
+  
+    <h1>
+      <script>writeString(settings[pageId].title)</script>
+    </h1>
+        <script>
+          settings[pageId].entries.forEach(entry => {
+            writeString("<div class='cc-plan-plan-entry' key={i}><div class='cc-plan-step-title'>"
+              + entry.title + 
+              "</div><div>תאריך יעד: " +
+              entry.targetDate +
+              "</div><div><a target='_default' href='" +
+              entry.detailsUrl + "'>" + entry.detailsTitle + "</a></div></div>")})
+        </script>
+    <br></br>
+    <div class="editor-comment">
+    המשימות מגיעות בקובצי WORD ו-PDF שנמצאים על Google Drive עליהם נעשה share שמאפשר למי שניגש דרך לינק לראות אותם
+    </div>
+  </div>
+  </body>
+</html>
