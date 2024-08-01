@@ -47,4 +47,5 @@
 
 .app-option-entry {
   cursor: pointer;
+  text-align: right;
 }
