@@ -4,7 +4,7 @@
    The html that contains the syllabus should be named course-syllabus.html
 */
 const settings = {
-  "title": "קורס קוסמים",
+  "title": "קורס לקוסמים מתחילים",
   "subtitle": "שנת 2024-2025",
   "image": "../teacherContent/magic2024/pencil.png",
   "targetPages": [

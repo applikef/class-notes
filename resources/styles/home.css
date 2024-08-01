@@ -29,13 +29,20 @@
   color: #61dafb;
 }
 
-@keyframes app-logo-spin {
-  /*from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }*/
+.app-header-subtitle {
+  font-weight: bold;
+}
+
+.home-page-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-page-logo-text {
+  align-self: center;
+  font-size: 2rem;
+  margin-left: 16px;
 }
 
 .app-option-entry {
